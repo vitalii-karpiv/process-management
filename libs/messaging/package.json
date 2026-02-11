@@ -1,0 +1,21 @@
+{
+  "name": "@process-platform/messaging",
+  "version": "0.1.0",
+  "description": "Messaging layer - Event-driven communication",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@process-platform/domain": "*",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/microservices": "^10.0.0",
+    "amqplib": "^0.10.3",
+    "amqp-connection-manager": "^4.1.14"
+  }
+}

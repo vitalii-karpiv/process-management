@@ -1,0 +1,26 @@
+{
+  "name": "@process-platform/worker",
+  "version": "0.1.0",
+  "description": "Worker Service for Process Management Platform",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@process-platform/domain": "*",
+    "@process-platform/infrastructure": "*",
+    "@process-platform/messaging": "*",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/microservices": "^10.0.0",
+    "amqplib": "^0.10.3",
+    "amqp-connection-manager": "^4.1.14"
+  }
+}

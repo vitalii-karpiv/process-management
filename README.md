@@ -135,14 +135,23 @@ Designed to integrate with logging and metrics systems.
 
 ## 🚧 Project Status
 
-**Current phase:** Design & core engine development
+**Current phase:** Structure setup complete, beginning implementation
 
-Planned milestones:
-- [ ] Process & activity definition schema
+Completed:
+- [x] Process & activity definition schema
+- [x] API specification (REST endpoints)
+- [x] Docker-based local setup
+- [x] Project structure (monorepo with workspaces)
+
+In Progress:
+- [ ] Domain entities implementation
+- [ ] Database schema (TypeORM)
 - [ ] Core execution engine
-- [ ] PostgreSQL schema
-- [ ] API specification (OpenAPI)
-- [ ] Docker-based local setup
+- [ ] API controllers
+- [ ] Worker executors
+
+Planned:
+- [ ] Integration tests
 - [ ] MVP release
 
 ---
@@ -157,10 +166,45 @@ Planned milestones:
 
 ---
 
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ and npm 9+
+- Docker and Docker Compose
+
+### Setup
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start infrastructure services
+docker-compose up -d
+
+# 3. Copy environment variables
+cp .env.example .env
+
+# 4. Build all packages
+npm run build
+
+# 5. Start API service
+npm run start:api:dev
+
+# 6. Start Worker service (in another terminal)
+npm run start:worker:dev
+```
+
+API will be available at: `http://localhost:3000/api/v1`
+
+---
+
 ## 📄 Documentation
 
-- `business-requirements.md` — Business Requirements
-- `technical-requirements.md` — Technical Requirements
-- `project-structure.md` — Codebase structure
+- `docs/business-requirements.md` — Business Requirements
+- `docs/technical-requirements.md` — Technical Requirements
+- `docs/project-structure.md` — Codebase architecture
+- `docs/api-endpoints.md` — REST API specification
+- `docs/entity-*.md` — Entity definitions
+- `STRUCTURE.md` — Project structure guide
 
 

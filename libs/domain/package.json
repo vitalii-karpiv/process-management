@@ -1,0 +1,17 @@
+{
+  "name": "@process-platform/domain",
+  "version": "0.1.0",
+  "description": "Domain layer - Business logic and entities",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0"
+  }
+}

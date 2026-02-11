@@ -1,0 +1,27 @@
+{
+  "name": "@process-platform/api",
+  "version": "0.1.0",
+  "description": "API Service for Process Management Platform",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@process-platform/domain": "*",
+    "@process-platform/infrastructure": "*",
+    "@process-platform/messaging": "*",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^7.0.0",
+    "class-validator": "^0.14.0",
+    "class-transformer": "^0.5.1"
+  }
+}
